@@ -1,0 +1,39 @@
+/* Make sure these cover the full height and have background */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #FDF0F5;
+}
+
+/* Main App container */
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  padding: 40px;
+  background-color: #FDF0F5;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Glass-like card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  width: 90%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+
+/* Optional: make sure any chart containers also have no white */
+.chart-container {
+  background-color: transparent;
+}
