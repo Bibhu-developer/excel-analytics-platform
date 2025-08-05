@@ -37,3 +37,10 @@ html, body, #root {
 .chart-container {
   background-color: transparent;
 }
+
+.footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}

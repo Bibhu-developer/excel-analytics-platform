@@ -27,21 +27,26 @@ function App() {
   };
 
   return (
-  <div className="App">
-    <div className="glass-card">
-      <h1>Excel Analytics Platform</h1>
-      <input type="file" accept=".xlsx" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Upload</button>
+    <div className="App">
+      <div className="glass-card">
+        <h1>Excel Analytics Platform</h1>
+        <input type="file" accept=".xlsx" onChange={handleFileChange} />
+        <button onClick={handleUpload}>Upload</button>
 
-      {excelData.length > 0 && (
-        <div style={{ marginTop: '20px' }}>
-          <h2>Parsed Data :</h2>
-          <ExcelChart data={excelData} />
-        </div>
-      )}
+        {excelData.length > 0 && (
+          <div style={{ marginTop: '20px' }}>
+            <h2>Parsed Data :</h2>
+            <ExcelChart data={excelData} />
+          </div>
+        )}
+      </div>
+
+      {/* Footer */}
+      <div className="footer">
+        Developed with ❤️ by <strong>Bibhu</strong>
+      </div>
     </div>
-  </div>
-);
+  );
 }
 
 export default App;
