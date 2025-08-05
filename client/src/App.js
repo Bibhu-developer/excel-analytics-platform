@@ -18,7 +18,7 @@ function App() {
     formData.append('file', selectedFile);
 
     try {
-      const res = await axios.post('http://localhost:5000/api/upload', formData);
+      const res = await axios.post('https://excel-api-14eb.onrender.com/api/upload', formData);
       setExcelData(res.data.data);
     } catch (err) {
       alert('Error uploading file');
